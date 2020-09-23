@@ -273,14 +273,14 @@
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1HTiKBDD6lRICkhFaIlZb2SH', quantity: 1}],
+      lineItems: [{price: 'price_1HUQLFDD6lRICkhFoF5qzmPH', quantity: 1}],
       mode: 'payment',
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfill-orders
-      successUrl: 'https://effi-tech.github.io/effitech/success',
+      successUrl: 'https://effi-tech.github.io/contents',
       cancelUrl: 'https://effi-tech.github.io/contents',
     })
     .then(function (result) {
